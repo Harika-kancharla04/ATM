@@ -24,7 +24,7 @@
         const amountInp=document.getElementById("amountInp")
         function withdrawl(amount){
             amount=+(amountInp.value)
-            if(isNaN(amount) || amount<0){
+            if(isNaN(amount) || amount<0 || amount==""){
                 alert("Enter valid amount")
                 return;
             }
@@ -43,7 +43,7 @@
         }
         function deposit(){
             amount=+(amountInp.value);
-            if(isNaN(amount) || amount<0){
+            if(isNaN(amount) || amount<0 || amount==""){
                 alert("Enter valid amount")
                 return;
             }
